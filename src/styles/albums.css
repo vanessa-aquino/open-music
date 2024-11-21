@@ -1,0 +1,74 @@
+.albums-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 29.05px;
+    color: var(--gray-2);
+    padding: 1rem 0;
+}
+
+.container-albums {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 0;
+    gap: 1.188rem;
+}
+
+.albums-list {
+    height: auto;
+    border-radius: 4px;
+    background-color: var(--gray-7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 26.63px;
+    color: var(--gray-2);
+    align-self:flex-start;
+    padding-left: 1rem;
+}
+
+.name-gender {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.singer, .music-gender {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: var(--gray-3);
+}
+
+.price-buy {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 23.24px;
+    color: var(--gray-2);
+}
+
+.buy {
+    width: 5.4rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: 1px solid var(--brand-2);
+    background-color: var(--brand-2);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+}

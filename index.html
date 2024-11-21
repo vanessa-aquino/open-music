@@ -3,30 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+     <link rel="stylesheet" href="./src/styles/reset.css">
+     <link rel="stylesheet" href="./src/styles/globalStyles.css">
+     <link rel="stylesheet" href="./src/styles/header.css">
+     <link rel="stylesheet" href="./src/styles/index.css">
+     <link rel="stylesheet" href="./src/styles/price-range.css">
+     <link rel="stylesheet" href="./src/styles/genres.css">
+     <link rel="stylesheet" href="./src/styles/albums.css">
     <title>Open Music</title>
   </head>
   <body>
     <!-- CABEÇALHO -->
     <header>
-      <!-- DESENVOLVA AQUI OS ELEMENTOS DO CABEÇALHO -->
+      <h1><span>O</span>pen<span>M</span>usic</h1>
+      <button type="button" id="theme-button"></button>
     </header>
-
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
       <!-- SEÇÃO DE FILTRO POR GENERO -->
-      <section>
-        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+      <section class="genre-filter">
+        <h2 class="genre-title">Gênero Musical</h2>
+        <ul class="genre-list">
+          <button class="genre-button"><li>Todos</li></button>
+          <button class="genre-button"><li>Funk</li></button>
+          <button class="genre-button"><li>Hip-Hop</li></button>
+          <button class="genre-button"><li>MPB</li></button>
+          <button class="genre-button"><li>Pop</li></button>
+          <button class="genre-button"><li>Rock</li></button>
+          <button class="genre-button"><li>Samba</li></button>
+        </ul>
       </section>
-
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
-      <section>
+       <section class="price-filter">
+         <div class="container-title-price">
+            <h2 class="price-title">Definir Preço</h2>
+            <h2 class="price-setter">Até <span>R$100</span></h2>
+         </div>
+         <input type="range" id="price-range" min="0" max="150" value="150">
+       </section>
+      <section class="albums">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-      </section>
-
-      <!-- SEÇÃO DE ALBUNS -->
-      <section>
-        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+         <h2 class="albums-title">Albuns Encontrados</h2>
+         <div class="container-albums">
+          <div class="albums-list">
+            <img src="./src/assets/imgs/anitta.jpg">
+            <h3>Bang!</h3>
+            <div class="name-gender">
+              <p class="singer">Anitta</p> <p class="music-gender">Funk</p>
+            </div>
+            <div class="price-buy">
+              <p class="price">102,66</p>
+              <button class="buy">Comprar</button>
+            </div>
+          </div>
+           <div class="albums-list">
+             <img src="./src/assets/imgs/demi.jpg">
+             <h3>Revamped</h3>
+             <div class="name-gender">
+               <p class="singer">Demi Lovato</p> <p class="music-gender">Rock</p>
+             </div>
+             <div class="price-buy">
+               <p class="price">R$123,56</p>
+               <button class="buy">Comprar</button>
+             </div>
+           </div>
+            <div class="albums-list">
+              <img src="./src/assets/imgs/rihanna.jpg">
+              <h3>ANTI</h3>
+              <div class="name-gender">
+                <p class="singer">Rihanna</p> <p class="music-gender">Pop</p>
+              </div>
+              <div class="price-buy">
+                <p class="price">R$137,91</p>
+                <button class="buy">Comprar</button>
+              </div>
+            </div>
+              <div class="albums-list">
+                <img src="./src/assets/imgs/anitta.jpg">
+                <h3>Bang!</h3>
+                <div class="name-gender">
+                  <p class="singer">Anitta</p> <p class="music-gender">Funk</p>
+                </div>
+                <div class="price-buy">
+                  <p class="price">102,66</p>
+                  <button class="buy">Comprar</button>
+                </div>
+              </div>
+               <div class="albums-list">
+                 <img src="./src/assets/imgs/demi.jpg">
+                 <h3>Revamped</h3>
+                 <div class="name-gender">
+                   <p class="singer">Demi Lovato</p> <p class="music-gender">Rock</p>
+                 </div>
+                 <div class="price-buy">
+                   <p class="price">R$123,56</p>
+                   <button class="buy">Comprar</button>
+                 </div>
+               </div>
+                <div class="albums-list">
+                  <img src="./src/assets/imgs/rihanna.jpg">
+                  <h3>ANTI</h3>
+                  <div class="name-gender">
+                    <p class="singer">Rihanna</p> <p class="music-gender">Pop</p>
+                  </div>
+                  <div class="price-buy">
+                    <p class="price">R$137,91</p>
+                    <button class="buy">Comprar</button>
+                  </div>
+                </div>
+         </div>
       </section>
     </main>
+
+    <!-- Scripts -->
+    <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>

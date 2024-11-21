@@ -1,0 +1,46 @@
+.genre-filter {
+    margin-top: 10rem;
+    max-width: 1024px;
+    width: 64rem;
+    height: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+.genre-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gray-2);
+}
+
+.genre-list {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.563rem;
+}
+
+.genre-button{
+    background-color: var(--gray-6);
+    border: none;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 4px;
+}
+
+.genre-button:active {
+    background-color: var(--gray-2);
+}
+
+li {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: var(--gray-3);
+}
+
+li:active{
+    color: var(--gray-7);
+}
