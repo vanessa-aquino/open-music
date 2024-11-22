@@ -21,6 +21,10 @@ body {
     margin: auto;
 }
 
+body.dark-mode {
+    background-color: var(--gray-1);
+}
+
 span {
     color: var(--brand-2);
 }

@@ -15,6 +15,10 @@
     color: var(--gray-2);
 }
 
+.genre-title.dark-mode {
+    color: var(--gray-7);
+}
+
 .genre-list {
     height: 4rem;
     display: flex;
@@ -30,8 +34,17 @@
     border-radius: 4px;
 }
 
+.genre-button.dark-mode {
+    background-color: var(--gray-2);
+    color: var(--gray-8);
+}
+
 .genre-button:active {
     background-color: var(--gray-2);
+}
+
+.genre-button.dark-mode:active {
+    background-color: var(--gray-7);
 }
 
 li {
@@ -41,6 +54,14 @@ li {
     color: var(--gray-3);
 }
 
+li.dark-mode {
+    color: var(--gray-6);
+}
+
 li:active{
     color: var(--gray-7);
+}
+
+li.dark-mode:active {
+    color: var(--gray-2);
 }

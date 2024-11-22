@@ -19,18 +19,22 @@
     color: var(--gray-2);
 }
 
+.price-title.dark-mode, .price-setter.dark-mode {
+   color: var(--gray-7); 
+}
+
 #price-range {
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
     cursor: pointer;
-    width: 100%;
+    align-self: center;
+    width: 99%;
     outline: none;
     background-color: var(--brand-1);
     border-radius: 0.5rem;
     height: 0.5rem;
     margin-top: 1rem;
-
     background: linear-gradient(to right, var(--brand-1) 0%, var(--gray-5) 0%);
     border-radius: 0.5rem;
     transition: background 0.3s ease;

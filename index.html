@@ -38,80 +38,14 @@
        <section class="price-filter">
          <div class="container-title-price">
             <h2 class="price-title">Definir Preço</h2>
-            <h2 class="price-setter">Até <span>R$100</span></h2>
+            <h2 class="price-setter">Até <span id="range-price">R$100</span></h2>
          </div>
-         <input type="range" id="price-range" min="0" max="150" value="150">
+         <input type="range" id="price-range" min="0" max="200" step="1" value="0">
        </section>
       <section class="albums">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
          <h2 class="albums-title">Albuns Encontrados</h2>
-         <div class="container-albums">
-          <div class="albums-list">
-            <img src="./src/assets/imgs/anitta.jpg">
-            <h3>Bang!</h3>
-            <div class="name-gender">
-              <p class="singer">Anitta</p> <p class="music-gender">Funk</p>
-            </div>
-            <div class="price-buy">
-              <p class="price">102,66</p>
-              <button class="buy">Comprar</button>
-            </div>
-          </div>
-           <div class="albums-list">
-             <img src="./src/assets/imgs/demi.jpg">
-             <h3>Revamped</h3>
-             <div class="name-gender">
-               <p class="singer">Demi Lovato</p> <p class="music-gender">Rock</p>
-             </div>
-             <div class="price-buy">
-               <p class="price">R$123,56</p>
-               <button class="buy">Comprar</button>
-             </div>
-           </div>
-            <div class="albums-list">
-              <img src="./src/assets/imgs/rihanna.jpg">
-              <h3>ANTI</h3>
-              <div class="name-gender">
-                <p class="singer">Rihanna</p> <p class="music-gender">Pop</p>
-              </div>
-              <div class="price-buy">
-                <p class="price">R$137,91</p>
-                <button class="buy">Comprar</button>
-              </div>
-            </div>
-              <div class="albums-list">
-                <img src="./src/assets/imgs/anitta.jpg">
-                <h3>Bang!</h3>
-                <div class="name-gender">
-                  <p class="singer">Anitta</p> <p class="music-gender">Funk</p>
-                </div>
-                <div class="price-buy">
-                  <p class="price">102,66</p>
-                  <button class="buy">Comprar</button>
-                </div>
-              </div>
-               <div class="albums-list">
-                 <img src="./src/assets/imgs/demi.jpg">
-                 <h3>Revamped</h3>
-                 <div class="name-gender">
-                   <p class="singer">Demi Lovato</p> <p class="music-gender">Rock</p>
-                 </div>
-                 <div class="price-buy">
-                   <p class="price">R$123,56</p>
-                   <button class="buy">Comprar</button>
-                 </div>
-               </div>
-                <div class="albums-list">
-                  <img src="./src/assets/imgs/rihanna.jpg">
-                  <h3>ANTI</h3>
-                  <div class="name-gender">
-                    <p class="singer">Rihanna</p> <p class="music-gender">Pop</p>
-                  </div>
-                  <div class="price-buy">
-                    <p class="price">R$137,91</p>
-                    <button class="buy">Comprar</button>
-                  </div>
-                </div>
+         <div class="container-albums" id="container-albums">
          </div>
       </section>
     </main>
