@@ -1,7 +1,7 @@
 const themeButton = document.getElementById('theme-button');
 let darkMode = false;
 
-function applySavedTheme() {
+export function applySavedTheme() {
     const savedTheme = JSON.parse(localStorage.getItem('@openMusic:theme'));
     if (savedTheme !== null) {
         darkMode = savedTheme;
@@ -13,7 +13,7 @@ function applySavedTheme() {
     themeButton.classList.toggle('dark-mode', darkMode);
     document.body.classList.toggle('dark-mode', darkMode);
 
-    document.querySelectorAll('header, h1, .genre-title, .genre-button, li, .price-title, .albums-title, .albums-list, h3, .singer, .music-gender, .price').forEach(element => {
+    document.querySelectorAll('header, h1, .price-setter,.genre-title, .genre-button, li, .price-title, .albums-title, .albums-list, h3, .singer, .music-gender, .price').forEach(element => {
         element.classList.toggle('dark-mode', darkMode);
     });
 

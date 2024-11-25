@@ -1,13 +1,14 @@
 import { applyInputRangeStyle } from "./inputRange.js";
 import { albumList } from "./albumsDatabase.js";
-import { activeThemeButton } from "./theme.js";
+import { activeThemeButton, applySavedTheme} from "./theme.js";
 
 const container = document.getElementById('container-albums');
+const inputRange = document.querySelector("#price-range");
 
 function routine() {
-    applyInputRangeStyle();
-    activeThemeButton();
+    applyInputRangeStyle(filterAlbumByPrice);
     insertCards(albumList);
+    activeThemeButton();
 }
 
 routine();
@@ -44,7 +45,7 @@ function createCard(album) {
 
     const price = document.createElement('p');
     price.classList.add('price');
-    price.textContent = album.price;
+    price.textContent = `R$ ${album.price}`;
     buyInfos.appendChild(price);
 
     const buy = document.createElement('button');
@@ -56,10 +57,28 @@ function createCard(album) {
 
 
 function insertCards(arr) {
+    container.innerHTML = '';
+
+    if(arr.length === 0) {
+        container.innerHTML = '<p>Nenhum álbum encontrado com o preço selecionado.</p>';
+        container.style.fontSize = '1.5rem'
+        container.style.fontWeight = '600'
+        container.style.lineHeight = '100%'
+        container.style.color = '#f76707';
+    }
+
     arr.forEach(album => {
         const card = createCard(album);
         container.appendChild(card);
     });
+
     return container;
+
 };
 
+
+function filterAlbumByPrice(maxprice) {
+    const filteredAlbums = albumList.filter(album => (album.price <= maxprice));
+    insertCards(filteredAlbums);
+    applySavedTheme();
+};
