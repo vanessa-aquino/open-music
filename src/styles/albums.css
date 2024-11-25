@@ -91,3 +91,35 @@ h3.dark-mode, .singer.dark-mode,.music-gender.dark-mode, .price.dark-mode {
     background-color: var(--brand-1);
     border: 1px solid var(--brand-1);
 }
+
+/* Responsividade */
+@media (max-width: 1040px) {
+    .container-albums {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem 0;
+        gap: 1.188rem;
+    }
+    .albums-list {
+        width: 80%;
+        margin: auto;
+    } 
+}
+
+
+@media(max-width: 730px) {
+    .container-albums {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 0;
+        gap: 1.188rem;
+    }
+}
+
+@media(max-width: 525px) {
+    .container-albums {
+        width: 100%;
+    }
+    .albums-list {
+        width: 100%;
+        margin: auto;
+    } 
+}

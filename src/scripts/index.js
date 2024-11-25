@@ -4,11 +4,15 @@ import { activeThemeButton, applySavedTheme} from "./theme.js";
 
 const container = document.getElementById('container-albums');
 const inputRange = document.querySelector("#price-range");
+const genreButtons = document.querySelectorAll('.genre-button');
+console.log(genreButtons)
 
 function routine() {
     applyInputRangeStyle(filterAlbumByPrice);
+    filterAlbumByGenre()
     insertCards(albumList);
     activeThemeButton();
+
 }
 
 routine();
@@ -60,7 +64,7 @@ function insertCards(arr) {
     container.innerHTML = '';
 
     if(arr.length === 0) {
-        container.innerHTML = '<p>Nenhum álbum encontrado com o preço selecionado.</p>';
+        container.innerHTML = '<p>Nenhum álbum encontrado com a opção selecionada.</p>';
         container.style.fontSize = '1.5rem'
         container.style.fontWeight = '600'
         container.style.lineHeight = '100%'
@@ -76,9 +80,26 @@ function insertCards(arr) {
 
 };
 
-
 function filterAlbumByPrice(maxprice) {
     const filteredAlbums = albumList.filter(album => (album.price <= maxprice));
     insertCards(filteredAlbums);
     applySavedTheme();
 };
+
+function filterAlbumByGenre() {
+    genreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            genreButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const selectedGenre = button.dataset.genre;
+            const filterdAlbum = selectedGenre === 'all' ? albumList : albumList.filter(album => album.genre.toUpperCase() === selectedGenre.toUpperCase());
+            
+            insertCards(filterdAlbum);
+            applySavedTheme()
+        })
+    })
+}
+
+
+

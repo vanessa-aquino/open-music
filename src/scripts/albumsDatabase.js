@@ -1,7 +1,7 @@
 export const albumList = [
     {
         title: 'Bang!',
-        genre: 'Funk',
+        genre: 'funk',
         singer: 'Anitta',
         price: 142.32,
         img: './src/assets/imgs/anitta.jpg',
@@ -9,7 +9,7 @@ export const albumList = [
 
     {
         title: 'Revamped' ,
-        genre: 'Rock',
+        genre: 'rock',
         singer: 'Demi Lovato',
         price: 123.56,
         img: './src/assets/imgs/demi.jpg' ,
@@ -17,7 +17,7 @@ export const albumList = [
 
     {
         title: 'ANTI',
-        genre: 'Pop',
+        genre: 'pop',
         singer: 'Rihanna',
         price: 137.91,
         img:'./src/assets/imgs/rihanna.jpg' ,
@@ -25,7 +25,7 @@ export const albumList = [
 
     {
         title: 'Lady Last',
-        genre: 'Funk',
+        genre: 'funk',
         singer: 'Gloria Groove',
         price: 102.66,
         img: './src/assets/imgs/gg.jpg',
@@ -33,7 +33,7 @@ export const albumList = [
 
     {
         title: 'Maria Gadú',
-        genre: 'MPB',
+        genre: 'mpb',
         singer: 'Maria Gadú',
         price: 50.13,
         img: './src/assets/imgs/maria-gadu.jpg' ,
@@ -41,7 +41,7 @@ export const albumList = [
 
     {
         title: 'Noites Cariocas',
-        genre: 'Samba',
+        genre: 'samba',
         singer: 'Diogo Nogueira',
         price: 51.67,
         img:'./src/assets/imgs/diogo-nogueira.jpg' ,

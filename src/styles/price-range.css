@@ -1,5 +1,4 @@
 .price-filter {
-    width: 100%;
     height: 5rem;
     padding: 2rem 0;
     display: flex;
@@ -54,3 +53,5 @@
 #price-range:active::-webkit-slider-thumb {
     transform: scale(1.2);
 }
+
+/* Responsividade */

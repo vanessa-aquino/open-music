@@ -25,20 +25,20 @@
       <section class="genre-filter">
         <h2 class="genre-title">Gênero Musical</h2>
         <ul class="genre-list">
-          <button class="genre-button"><li>Todos</li></button>
-          <button class="genre-button"><li>Funk</li></button>
-          <button class="genre-button"><li>Hip-Hop</li></button>
-          <button class="genre-button"><li>MPB</li></button>
-          <button class="genre-button"><li>Pop</li></button>
-          <button class="genre-button"><li>Rock</li></button>
-          <button class="genre-button"><li>Samba</li></button>
+          <button class="genre-button" data-genre="all"><li>Todos</li></button>
+          <button class="genre-button" data-genre="funk"><li>Funk</li></button>
+          <button class="genre-button" data-genre="hip-hop"><li>Hip-Hop</li></button>
+          <button class="genre-button" data-genre="mpb"><li>MPB</li></button>
+          <button class="genre-button" data-genre="pop"><li>Pop</li></button>
+          <button class="genre-button" data-genre="rock"><li>Rock</li></button>
+          <button class="genre-button" data-genre="samba"><li>Samba</li></button>
         </ul>
       </section>
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
        <section class="price-filter">
          <div class="container-title-price">
             <h2 class="price-title">Definir Preço</h2>
-            <h2 class="price-setter">Até <span id="range-price">R$100</span></h2>
+            <h2 class="price-setter">Até <span id="range-price">R$200</span></h2>
          </div>
          <input type="range" id="price-range" min="0" max="200" step="1" value="0">
        </section>
