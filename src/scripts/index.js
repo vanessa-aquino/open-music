@@ -49,7 +49,7 @@ function createCard(album) {
 
     const price = document.createElement('p');
     price.classList.add('price');
-    price.textContent = `R$ ${album.price}`;
+    price.textContent = `R$ ${album.price}`.replace('.', ',');
     buyInfos.appendChild(price);
 
     const buy = document.createElement('button');
