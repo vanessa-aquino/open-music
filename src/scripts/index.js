@@ -40,7 +40,7 @@ function createCard(album) {
 
     const genre = document.createElement('p');
     genre.classList.add('music-gender');
-    genre.textContent = album.genre;
+    genre.textContent = album.genre.toUpperCase();
     singerInfos.appendChild(genre);
 
     const buyInfos = document.createElement('div');
@@ -64,7 +64,7 @@ function insertCards(arr) {
     container.innerHTML = '';
 
     if(arr.length === 0) {
-        container.innerHTML = '<p>Nenhum álbum encontrado com a opção selecionada.</p>';
+        container.innerHTML = '<p>Nenhum álbum encontrado.</p>';
         container.style.fontSize = '1.5rem'
         container.style.fontWeight = '600'
         container.style.lineHeight = '100%'

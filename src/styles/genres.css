@@ -80,17 +80,13 @@ li.dark-mode:active {
     }
 }
 
-@media(max-width: 730px) and (max-width: 960px) {
-    .genre-filter {
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 960px) {
     .genre-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
+        justify-content: center;
+        align-items: center;
     }
 }
 

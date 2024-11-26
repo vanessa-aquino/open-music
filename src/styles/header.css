@@ -44,7 +44,7 @@ h1.dark-mode {
 /* Responsividade */
 @media(max-width: 1040px) {
     header {
-        width: 100%;
+        width:95%;
     }
 
     h1 {

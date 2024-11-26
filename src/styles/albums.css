@@ -100,7 +100,7 @@ h3.dark-mode, .singer.dark-mode,.music-gender.dark-mode, .price.dark-mode {
         gap: 1.188rem;
     }
     .albums-list {
-        width: 80%;
+        width: 100%;
         margin: auto;
     } 
 }
